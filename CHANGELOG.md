@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2 — 2026-10-29
+
+Repository renamed to newtalaria/talaria-agent-plugin (old URL redirects). No functional changes.
+
 ## 0.2.1 — 2026-10-29
 
 ### Fixed

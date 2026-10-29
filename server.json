@@ -3,8 +3,11 @@
   "name": "com.newtalaria/talaria",
   "title": "Talaria",
   "description": "Errors, traces, replays and logs from Talaria for coding agents.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://www.newtalaria.com/mcp",
+  "repository": {
+    "url": "https://github.com/newtalaria/talaria-agent-plugin"
+  },
   "icons": [
     {
       "src": "https://www.newtalaria.com/logo-mark.png",

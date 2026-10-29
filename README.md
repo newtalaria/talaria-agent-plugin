@@ -1,6 +1,6 @@
 # Talaria agent plugin
 
-Hosted [Talaria](https://www.newtalaria.com) MCP plus skills so Grok Bot, Cursor, and Grok Build can investigate production errors, traces, and replays — then triage issues and verify fixes after a release.
+Hosted [Talaria](https://www.newtalaria.com) MCP plus skills for coding agents (Copilot, VS Code, Claude Code, Gemini CLI, Cursor, Grok) to investigate production errors, traces, and replays — then triage issues and verify fixes after a release.
 
 **MCP:** `https://api.newtalaria.com/mcp` (Streamable HTTP, OAuth 2.1 with PKCE)
 
@@ -54,7 +54,7 @@ copilot plugin install talaria@awesome-copilot
 Or install directly from this repo:
 
 ```bash
-copilot plugin install newtalaria/talaria-grok-plugin
+copilot plugin install newtalaria/talaria-agent-plugin
 ```
 
 ### Claude Code
@@ -62,7 +62,7 @@ copilot plugin install newtalaria/talaria-grok-plugin
 **Step 1:** Add the self-hosted marketplace
 
 ```bash
-claude plugin marketplace add newtalaria/talaria-grok-plugin
+claude plugin marketplace add newtalaria/talaria-agent-plugin
 ```
 
 **Step 2:** Install the plugin
@@ -76,7 +76,7 @@ Anthropic directory listing pending.
 ### Gemini CLI
 
 ```bash
-gemini extensions install https://github.com/newtalaria/talaria-grok-plugin
+gemini extensions install https://github.com/newtalaria/talaria-agent-plugin
 ```
 
 The extension will appear in the gallery at [geminicli.com/extensions](https://geminicli.com/extensions/browse/) once the repo has the `gemini-cli-extension` topic.
@@ -151,7 +151,7 @@ LICENSE                      # MIT · Talaria Labs
 - Product MCP page: https://www.newtalaria.com/mcp
 - Docs: https://www.newtalaria.com/docs/mcp
 - Privacy: https://www.newtalaria.com/legal/privacy
-- This repo: https://github.com/newtalaria/talaria-grok-plugin
+- This repo: https://github.com/newtalaria/talaria-agent-plugin
 
 ## License
 

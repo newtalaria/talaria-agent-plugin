@@ -1,14 +1,14 @@
 {
   "name": "talaria",
   "displayName": "Talaria",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Talaria MCP + five skills: instrument, observe performance, triage production issues, and verify fixes after release.",
   "author": {
     "name": "Talaria Labs",
     "url": "https://www.newtalaria.com"
   },
   "homepage": "https://www.newtalaria.com/agents",
-  "repository": "https://github.com/newtalaria/talaria-grok-plugin",
+  "repository": "https://github.com/newtalaria/talaria-agent-plugin",
   "license": "MIT",
   "keywords": [
     "talaria",
