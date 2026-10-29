@@ -2,6 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
   "mcpServers": {
     "talaria": {
+      "type": "streamable-http",
       "url": "https://api.newtalaria.com/mcp"
     }
   }

@@ -131,9 +131,14 @@ Always-on toolsets: `docs`, `connection`. Others: `projects`, `keys`, `issues`, 
 ## Repository layout
 
 ```
+plugin.json                  # Agent Plugins 1.0 manifest (VS Code, Copilot CLI, Cursor)
+mcp.json                     # Agent Plugins MCP wiring (type: streamable-http)
 .cursor-plugin/plugin.json   # Cursor plugin manifest
 .grok-plugin/plugin.json     # Grok Build style manifest
-mcp.json                     # MCP server wiring
+.claude-plugin/              # Claude Code plugin + self-hosted marketplace
+.mcp.json                    # MCP wiring for Claude Code / Grok Build (type: http)
+gemini-extension.json        # Gemini CLI extension (httpUrl)
+server.json                  # Official MCP Registry entry
 skills/                      # Agent skills (closed loop)
 assets/logo.png              # 512×512 mark on solid plate
 LICENSE                      # MIT · Talaria Labs
