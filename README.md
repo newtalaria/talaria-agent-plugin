@@ -10,15 +10,6 @@ No secrets live in this plugin. Agents sign in with OAuth (or a personal Bearer 
 
 ## Install
 
-### Grok Bot (Connect apps)
-
-1. Open **Connect apps** in Grok Bot.
-2. Search **Talaria** (handle `talaria`) once the marketplace listing is approved — **or** add a custom MCP server named `Talaria` at `https://api.newtalaria.com/mcp`.
-3. Confirm → authorise in the browser → choose your organisation.
-4. Ask something like: *“What are the top open errors in production?”*
-
-Setup guide: [newtalaria.com/mcp](https://www.newtalaria.com/mcp?client=grok)
-
 ### Cursor
 
 1. Install this plugin from the Cursor Marketplace (or clone this repo and load it as a local plugin).
@@ -28,9 +19,74 @@ Setup guide: [newtalaria.com/mcp](https://www.newtalaria.com/mcp?client=grok)
 
 Docs: [MCP for Cursor](https://www.newtalaria.com/docs/mcp/cursor)
 
+### VS Code / GitHub Copilot
+
+**Option 1: Install via link** (opens VS Code)
+
+[Install in VS Code](https://insiders.vscode.dev/redirect/mcp/install?name=talaria&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fapi.newtalaria.com%2Fmcp%22%7D)
+
+For VS Code Insiders, [use this link](https://insiders.vscode.dev/redirect/mcp/install?name=talaria&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fapi.newtalaria.com%2Fmcp%22%7D&quality=insiders).
+
+**Option 2: Command line**
+
+```bash
+code --add-mcp '{"name":"talaria","type":"http","url":"https://api.newtalaria.com/mcp"}'
+```
+
+**Option 3: MCP Gallery** (when listed)
+
+Search for `@mcp talaria` in the Extensions view, or run **MCP: Add Server → Browse MCP Servers…**
+
+### GitHub Copilot CLI
+
+Once listed in [awesome-copilot](https://github.com/github/awesome-copilot):
+
+```bash
+copilot plugin install talaria@awesome-copilot
+```
+
+Or install directly from this repo:
+
+```bash
+copilot plugin install newtalaria/talaria-grok-plugin
+```
+
+### Claude Code
+
+**Step 1:** Add the self-hosted marketplace
+
+```bash
+claude plugin marketplace add newtalaria/talaria-grok-plugin
+```
+
+**Step 2:** Install the plugin
+
+```bash
+claude plugin install talaria@newtalaria
+```
+
+Once listed in the Anthropic directory, you can also install from `claude-community`.
+
+### Gemini CLI
+
+```bash
+gemini extensions install https://github.com/newtalaria/talaria-grok-plugin
+```
+
+The extension will appear in the gallery at [geminicli.com/extensions](https://geminicli.com/extensions/browse/) once the repo has the `gemini-cli-extension` topic.
+
+### Grok Bot (Connect apps)
+
+1. Open **Connect apps** in Grok Bot.
+2. Search **Talaria** (handle `talaria`) once the marketplace listing is approved — **or** add a custom MCP server named `Talaria` at `https://api.newtalaria.com/mcp`.
+3. Confirm → authorise in the browser → choose your organisation.
+4. Ask something like: *"What are the top open errors in production?"*
+
+Setup guide: [newtalaria.com/mcp](https://www.newtalaria.com/mcp?client=grok)
+
 ### Grok Build
 
-Once listed in [`xai-org/plugin-marketplace`](https://github.com/xai-org/plugin-marketplace), install by plugin name `talaria` (SHA-pinned remote source). Until then, point Grok Build at this repository’s tip.
+Once listed in [`xai-org/plugin-marketplace`](https://github.com/xai-org/plugin-marketplace), install by plugin name `talaria` (SHA-pinned remote source). Until then, point Grok Build at this repository's tip.
 
 ---
 

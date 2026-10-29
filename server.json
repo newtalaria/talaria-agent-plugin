@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.newtalaria/talaria",
+  "title": "Talaria",
+  "description": "Errors, traces, replays and logs from Talaria for coding agents.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.newtalaria.com/mcp",
+  "icons": [
+    {
+      "src": "https://www.newtalaria.com/logo-mark.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.newtalaria.com/mcp"
+    }
+  ]
+}
