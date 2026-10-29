@@ -1,13 +1,13 @@
 {
   "name": "talaria",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Hosted Talaria MCP with skills — production errors, traces, replays; triage issues and verify fixes.",
   "author": {
     "name": "Talaria Labs",
     "url": "https://www.newtalaria.com"
   },
   "homepage": "https://www.newtalaria.com/mcp",
-  "repository": "https://github.com/newtalaria/talaria-grok-plugin",
+  "repository": "https://github.com/newtalaria/talaria-agent-plugin",
   "license": "MIT",
   "keywords": ["talaria", "newtalaria", "mcp", "observability"],
   "logo": "assets/logo.png"
