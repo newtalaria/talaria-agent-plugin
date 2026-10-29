@@ -21,21 +21,9 @@ Setup guide: [newtalaria.com/mcp](https://www.newtalaria.com/mcp?client=grok)
 
 ### Cursor
 
-**Option 1: From cursor.directory**
-
-The plugin may be listed at `https://cursor.directory/plugins/talaria` (not verified at time of writing).
-
-**Option 2: Local plugin**
-
-1. Clone this repo: `git clone https://github.com/newtalaria/talaria-grok-plugin`
-2. In Cursor, go to **Settings → Cursor Settings → Plugins → Add Plugin Directory**
-3. Point to the cloned directory
-4. Cursor registers the `talaria` MCP server from `mcp.json`
-5. Complete OAuth when prompted
+Install from [cursor.directory/plugins/talaria](https://cursor.directory/plugins/talaria), or add the MCP server manually by following [the Cursor setup guide](https://www.newtalaria.com/docs/mcp/cursor).
 
 Skills under `skills/` teach get-started → triage → verify-fix.
-
-Docs: [MCP for Cursor](https://www.newtalaria.com/docs/mcp/cursor)
 
 ### VS Code / GitHub Copilot
 
@@ -143,7 +131,7 @@ Always-on toolsets: `docs`, `connection`. Others: `projects`, `keys`, `issues`, 
 ## Repository layout
 
 ```
-.cursor-plugin/plugin.json   # Cursor marketplace manifest
+.cursor-plugin/plugin.json   # Cursor plugin manifest
 .grok-plugin/plugin.json     # Grok Build style manifest
 mcp.json                     # MCP server wiring
 skills/                      # Agent skills (closed loop)
