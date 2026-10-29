@@ -10,12 +10,30 @@ No secrets live in this plugin. Agents sign in with OAuth (or a personal Bearer 
 
 ## Install
 
+### Grok Bot (Connect apps)
+
+1. Open **Connect apps** in Grok Bot.
+2. Search **Talaria** (handle `talaria`) once the marketplace listing is approved — **or** add a custom MCP server named `Talaria` at `https://api.newtalaria.com/mcp`.
+3. Confirm → authorise in the browser → choose your organisation.
+4. Ask something like: *"What are the top open errors in production?"*
+
+Setup guide: [newtalaria.com/mcp](https://www.newtalaria.com/mcp?client=grok)
+
 ### Cursor
 
-1. Install this plugin from the Cursor Marketplace (or clone this repo and load it as a local plugin).
-2. Cursor registers the `talaria` MCP server from `mcp.json`.
-3. Complete OAuth when prompted.
-4. Skills under `skills/` teach get-started → triage → verify-fix.
+**Option 1: From cursor.directory**
+
+The plugin may be listed at `https://cursor.directory/plugins/talaria` (not verified at time of writing).
+
+**Option 2: Local plugin**
+
+1. Clone this repo: `git clone https://github.com/newtalaria/talaria-grok-plugin`
+2. In Cursor, go to **Settings → Cursor Settings → Plugins → Add Plugin Directory**
+3. Point to the cloned directory
+4. Cursor registers the `talaria` MCP server from `mcp.json`
+5. Complete OAuth when prompted
+
+Skills under `skills/` teach get-started → triage → verify-fix.
 
 Docs: [MCP for Cursor](https://www.newtalaria.com/docs/mcp/cursor)
 
@@ -65,7 +83,7 @@ claude plugin marketplace add newtalaria/talaria-grok-plugin
 claude plugin install talaria@newtalaria
 ```
 
-Once listed in the Anthropic directory, you can also install from `claude-community`.
+Anthropic directory listing pending.
 
 ### Gemini CLI
 
@@ -74,15 +92,6 @@ gemini extensions install https://github.com/newtalaria/talaria-grok-plugin
 ```
 
 The extension will appear in the gallery at [geminicli.com/extensions](https://geminicli.com/extensions/browse/) once the repo has the `gemini-cli-extension` topic.
-
-### Grok Bot (Connect apps)
-
-1. Open **Connect apps** in Grok Bot.
-2. Search **Talaria** (handle `talaria`) once the marketplace listing is approved — **or** add a custom MCP server named `Talaria` at `https://api.newtalaria.com/mcp`.
-3. Confirm → authorise in the browser → choose your organisation.
-4. Ask something like: *"What are the top open errors in production?"*
-
-Setup guide: [newtalaria.com/mcp](https://www.newtalaria.com/mcp?client=grok)
 
 ### Grok Build
 
