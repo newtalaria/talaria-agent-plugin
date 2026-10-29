@@ -6,7 +6,9 @@
   "version": "1.0.1",
   "websiteUrl": "https://www.newtalaria.com/mcp",
   "repository": {
-    "url": "https://github.com/newtalaria/talaria-agent-plugin"
+    "url": "https://github.com/newtalaria/talaria-agent-plugin",
+    "source": "github",
+    "id": "1437569488"
   },
   "icons": [
     {
