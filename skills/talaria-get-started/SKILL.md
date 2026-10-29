@@ -56,6 +56,8 @@ server URL.
 
 Stop after a successful smoke. Offer next skills by name only:
 
+- Install SDK / first ingest → `talaria-instrument`
+- Health / performance overview → `talaria-observe-performance`
 - Triage a live issue → `talaria-triage-issue`
 - Check whether a fix held after release → `talaria-verify-fix`
 

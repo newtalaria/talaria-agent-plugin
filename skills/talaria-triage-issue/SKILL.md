@@ -105,6 +105,12 @@ A later matching event reopens a resolved issue.
 
 For post-release verification, hand off to `talaria-verify-fix`.
 
+Offer other skills by name only:
+
+- Install SDK / first ingest → `talaria-instrument`
+- Health / performance overview → `talaria-observe-performance`
+- Connect / smoke read → `talaria-get-started`
+
 ## Done when
 
 You have named the issue, summarised impact from the pack, stated a
