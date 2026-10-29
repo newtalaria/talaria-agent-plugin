@@ -39,10 +39,12 @@ Once listed in [`xai-org/plugin-marketplace`](https://github.com/xai-org/plugin-
 | Skill | When to use |
 | --- | --- |
 | `talaria-get-started` | Connect, confirm org/project, first smoke read |
+| `talaria-instrument` | Add Talaria SDK, create project/key, send first test event |
+| `talaria-observe-performance` | Read project health, traces, spans, queries, sessions, monitors |
 | `talaria-triage-issue` | Investigate one issue (pack → trace/replay/suspects → optional GitHub) |
 | `talaria-verify-fix` | After a release: `verify_fix` verdict, optional status update |
 
-Closed loop: **get-started → triage-issue → verify-fix**.
+Closed loop: **get-started → instrument → observe → triage → verify-fix**.
 
 ---
 

@@ -90,6 +90,13 @@ Only after the user agrees:
 Wrong GitHub link from an earlier step → `unlink_github_issue` only with
 intent; it does not delete the GitHub issue.
 
+Offer other skills by name only:
+
+- Install SDK / first ingest → `talaria-instrument`
+- Health / performance overview → `talaria-observe-performance`
+- Deep triage investigation → `talaria-triage-issue`
+- Connect / smoke read → `talaria-get-started`
+
 ## Done when
 
 You reported a real `verify_fix` verdict (or a clear blocker:
