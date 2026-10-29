@@ -1,0 +1,12 @@
+{
+  "name": "newtalaria",
+  "owner": {
+    "name": "Talaria Labs"
+  },
+  "plugins": [
+    {
+      "name": "talaria",
+      "source": "./"
+    }
+  ]
+}

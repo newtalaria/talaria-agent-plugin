@@ -1,0 +1,4 @@
+# Validator artifacts (ajv-cli for schema validation)
+node_modules/
+package.json
+package-lock.json
