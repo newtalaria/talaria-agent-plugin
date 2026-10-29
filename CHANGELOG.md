@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1 — 2026-10-29
+
+### Fixed
+
+- Root `mcp.json` now declares `"type": "streamable-http"`, so it validates against the Agent Plugins 1.0 MCP schema. GitHub Copilot CLI and VS Code agent plugins previously skipped the untyped entry and installed only the skills; they now wire up the hosted MCP too. `.mcp.json` (Claude Code / Grok Build) and `gemini-extension.json` are unchanged.
+
 ## 0.2.0 — 2026-10-29
 
 Added instrumentation and observability skills to complete the sold agentic loop.
