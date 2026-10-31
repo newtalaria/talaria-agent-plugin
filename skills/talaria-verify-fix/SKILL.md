@@ -75,7 +75,7 @@ window; do not invent events on timeout.
 
 Report `verdict`, `release` / `releaseSha`, `adoptionPercent`,
 `eventsSince`, `reasons`, and thresholds from the result. Include
-`dashboardUrl` if you have it from an earlier `get_error`.
+`dashboardUrl` if you have it from an earlier `get_issue`.
 
 ### 4. Optional status update (ask first)
 
