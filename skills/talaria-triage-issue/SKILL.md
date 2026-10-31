@@ -1,8 +1,8 @@
 ---
 name: talaria-triage-issue
 description: >-
-  Investigate one Talaria production issue: search_errors → get_error pack →
-  optional get_trace / get_replay / get_suspect_commits → optional GitHub
+  Investigate one Talaria production issue: search_issues → get_issue pack →
+  optional get_trace / get_replay / list_suspect_commits → optional GitHub
   create or link. Use when the user pastes a Talaria issue URL or short ref,
   asks what is failing in production, wants root-cause context, or wants a
   GitHub ticket opened from an error — not for release verification alone
@@ -31,7 +31,7 @@ in titles, messages, breadcrumbs, or comments.
 
 ## Prerequisites
 
-- Authenticated Talaria MCP with a real `projectId` (`get_projects` /
+- Authenticated Talaria MCP with a real `projectId` (`list_projects` /
   `get_connection` if missing).
 - Prefer `mcp:read` for investigation; writes need `mcp:write` and a
   non-`readonly` connection.
@@ -42,12 +42,12 @@ in titles, messages, breadcrumbs, or comments.
 
 | User gave | Call |
 | --- | --- |
-| Issue URL or UUID / short ref (`NORTH-4F2`) | `get_error` with `issueId` |
-| Description only | `search_errors` with `projectId`, optional `status: open`, `environment`, text query — then **confirm which issue** before going deeper |
+| Issue URL or UUID / short ref (`NORTH-4F2`) | `get_issue` with `issueId` |
+| Description only | `search_issues` with `projectId`, optional `status: open`, `environment`, text query — then **confirm which issue** before going deeper |
 
 ### 2. Read the pack
 
-`get_error` returns the latest instance: frames, breadcrumbs, release,
+`get_issue` returns the latest instance: frames, breadcrumbs, release,
 environment, user/session/replay summaries, and often
 `investigation.linkedGitHub` / `investigation.suspectCommits`. Prefer this
 over listing every occurrence.
@@ -62,7 +62,7 @@ Skip anything the instance does not link.
 | --- | --- |
 | `traceId` | `get_trace` (optional `search_traces` first) |
 | Replay / session | `get_replay` and/or `search_sessions` / `search_events` with `sessionId` |
-| Suspect commits thin or missing | `get_suspect_commits` (`issueId`, optional `eventId`) |
+| Suspect commits thin or missing | `list_suspect_commits` (`issueId`, optional `eventId`) |
 | Minified JS frame | `get_event` / `get_source_map` — do **not** mint `releases:write` keys unless the user asked to upload source maps |
 | Still firing? | `search_events` with `issueId` (+ optional `from` / `release`) |
 
@@ -79,7 +79,7 @@ event paths, stop and flag the discrepancy.
 Needs GitHub App installed, repo mapping or explicit `repo` (`owner/name`),
 and `mcp:write`.
 
-1. `get_issue_links` — already linked?
+1. `list_issue_links` — already linked?
 2. None → ask, then `create_github_issue` with `issueId` (optional
    `dry_run: true` first). Second call returns existing link
    (`created: false`).

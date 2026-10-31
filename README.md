@@ -4,7 +4,7 @@ Hosted [Talaria](https://www.newtalaria.com) MCP plus skills for coding agents (
 
 **MCP:** `https://api.newtalaria.com/mcp` (Streamable HTTP, OAuth 2.1 with PKCE)
 
-No secrets live in this plugin. Agents sign in with OAuth (or a personal Bearer token from **Settings → Integrations**). **Never** use an ingest key (`tal_live_…`) — `/mcp` rejects them.
+No secrets live in this plugin. Agents sign in with OAuth (or a personal Bearer token from **Settings → Integrations**). **Never** use a publishable or secret ingest key (`tal_pk_…`, `tal_sk_…`, with `prod` / `stg` / `test` / `dev` in the key) or a monitor token (`tal_mon_…`) as MCP auth — `/mcp` rejects them.
 
 ---
 
@@ -110,7 +110,7 @@ Closed loop: **get-started → instrument → observe → triage → verify-fix*
 
 Write includes read; keys includes write. Skills ask before any write tool.
 
-**Do not** paste `tal_live_…` ingest keys into MCP clients.
+**Do not** paste `tal_pk_…`, `tal_sk_…`, or `tal_mon_…` tokens into MCP clients.
 
 ---
 
@@ -140,8 +140,15 @@ mcp.json                     # Agent Plugins MCP wiring (type: streamable-http)
 gemini-extension.json        # Gemini CLI extension (httpUrl)
 server.json                  # Official MCP Registry entry
 skills/                      # Agent skills (closed loop)
+scripts/                     # mcp-tools.json allowlist + check-skill-tools.mjs
 assets/logo.png              # 512×512 mark on solid plate
 LICENSE                      # MIT · Talaria Labs
+```
+
+Validate skill tool names against `scripts/mcp-tools.json`:
+
+```bash
+node scripts/check-skill-tools.mjs
 ```
 
 ---

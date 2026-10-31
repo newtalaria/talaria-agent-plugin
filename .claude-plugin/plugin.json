@@ -1,7 +1,7 @@
 {
   "name": "talaria",
   "displayName": "Talaria",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Talaria MCP + five skills: instrument, observe performance, triage production issues, and verify fixes after release.",
   "author": {
     "name": "Talaria Labs",

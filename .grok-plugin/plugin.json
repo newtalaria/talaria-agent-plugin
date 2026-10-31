@@ -1,6 +1,6 @@
 {
   "name": "talaria",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Hosted Talaria MCP with skills — production errors, traces, replays; triage issues and verify fixes.",
   "author": {
     "name": "Talaria Labs",

@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.3.0 — 2026-10-31
+
+### Changed
+
+- All five skills now reference current Talaria MCP tool names (`search_issues`, `get_issue`, `list_projects`, `list_docs` / `search_docs` / `get_doc`, `list_suspect_commits`, `set_feature_flag_off` / `set_feature_flag_percent`, and related D2 renames). Playbook paths use `agents/add-talaria` and current docs tool arguments.
+- Auth guidance uses current key prefixes (`tal_sk_`, `tal_pk_`, `tal_mon_`) instead of legacy `tal_live_…`.
+
+### Added
+
+- `scripts/mcp-tools.json` — canonical 44-tool allowlist (sync from `dunatron/new_talaria` `docs/mcp-tools.json`).
+- `scripts/check-skill-tools.mjs` — fails CI/local runs when skills reference unknown or deprecated tool names.
+
 ## 0.2.2 — 2026-10-29
 
 Repository renamed to newtalaria/talaria-agent-plugin (old URL redirects). No functional changes.
