@@ -3,7 +3,7 @@ name: talaria-observe-performance
 description: >-
   Read Talaria project health and performance: get_project_stats,
   search_traces / get_trace, list_suspect_spans, list_database_queries,
-  search_sessions, get_logs, list_monitors. Use when the user asks whether
+  search_sessions, search_logs, list_monitors. Use when the user asks whether
   a service is healthy, what is slow, which spans or queries dominate, or
   for session/monitor/log overview — not for SDK install (talaria-instrument),
   single-issue root cause (talaria-triage-issue), or verify_fix.
@@ -54,8 +54,8 @@ when a concrete error issue emerges.
 ### 3. Operational checks
 
 - Monitors: `list_monitors` / `list_monitor_runs` with `projectId`.
-- Logs: `get_logs` with `projectId`, optional `from` / `to`, `level`,
-  `environment`.
+- Logs: `search_logs` with `projectId`, optional `traceId`, `serviceName`,
+  `minSeverity`, `limit`.
 - AI runs: `list_agent_runs` with `projectId`, optional `from` / `to`.
 
 ### 4. Hand off when appropriate

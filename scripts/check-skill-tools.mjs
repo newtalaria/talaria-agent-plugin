@@ -12,7 +12,7 @@ const skillsDir = join(root, "skills");
 const catalogPath = join(root, "scripts", "mcp-tools.json");
 
 const catalog = JSON.parse(readFileSync(catalogPath, "utf8"));
-const allowed = new Set(catalog.tools);
+const allowed = new Set(catalog.tools ?? catalog.names);
 const deprecated = new Set(catalog.deprecated ?? []);
 
 /** Likely MCP tool names (not arbitrary backtick prose). */

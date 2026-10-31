@@ -79,7 +79,7 @@ event paths, stop and flag the discrepancy.
 Needs GitHub App installed, repo mapping or explicit `repo` (`owner/name`),
 and `mcp:write`.
 
-1. `get_issue_links` — already linked?
+1. `list_issue_links` — already linked?
 2. None → ask, then `create_github_issue` with `issueId` (optional
    `dry_run: true` first). Second call returns existing link
    (`created: false`).
